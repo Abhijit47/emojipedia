@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Hind+Siliguri:wght@400;500;600;700&family=McLaren&family=Montserrat:wght@100;200;300;400&family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #88D6F0;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* CARD COMPONENT */
+.heading {
+  font-size: 3.4rem;
+  animation: fadeOut 2s ease-in-out;
+  padding: 0.5rem;
+
+  position: relative;
+}
+
+.grid {
+  /* max-width: 100rem; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 3.2rem;
+}
+
+.grid:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  border: 1px solid #888;
+  border-radius: 10px;
+  -webkit-box-shadow: 11px -15px 7px -6px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 11px -15px 7px -6px rgba(0, 0, 0, 0.34);
+  box-shadow: 11px -15px 7px -6px rgba(0, 0, 0, 0.34);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.6rem;
+  gap: 1.2rem;
+}
+
+.tag {
+  margin-top: 0;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  transform: translate(-50px, -50px);
+}
+
+.character {
+  font-size: 5rem;
+}
+
+.slug{
+  font-size: 1.6rem;
+
+}
+
+.unicode-name{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.emoji {
+  animation: animate 5s ease-in-out;
+}
+
+.time {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 5px;
+  right: 10px;
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.5;
+    transform: scale(1.5) skew(15deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
